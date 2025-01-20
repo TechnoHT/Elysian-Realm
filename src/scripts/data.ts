@@ -209,6 +209,9 @@ export const wilb: NameAcr = { name: 'Willows B', acr: 'wilb' };
 export const zent: NameAcr = { name: 'Zeno T', acr: 'zent' };
 export const zenm: NameAcr = { name: 'Zeno M', acr: 'zenm' };
 export const zenb: NameAcr = { name: 'Zeno B', acr: 'zenb' };
+export const itut: NameAcr = { name: 'Illuminating the Universe T', acr: 'itut' };
+export const itum: NameAcr = { name: 'Illuminating the Universe M', acr: 'itum' };
+export const itub: NameAcr = { name: 'Illuminating the Universe B', acr: 'itub' };
 // weapons
 export const hawp: NameAcr = { name: '', acr: 'hawp' };
 export const abfl: NameAcr = { name: 'Abyss Flower: Liminal Spiral', acr: 'abfl' };
@@ -261,6 +264,7 @@ export const sumu: NameAcr = { name: 'Surtr Muspellsverd', acr: 'sumu' };
 export const thsa: NameAcr = { name: '3rd Sacred Relic', acr: 'thsa' };
 export const topa: NameAcr = { name: 'Tower of the Past: Silk Ladder', acr: 'topa' };
 export const whpa: NameAcr = { name: 'Whisper of the Past: Sonnet', acr: 'whpa' };
+export const venv: NameAcr = { name: 'Valorous Effulgence: New Voyage', acr: 'venv'};
 // buffs
 export const buffs = [
 	// 0
@@ -278,7 +282,8 @@ export const buffs = [
 		'HOMU', //
 		'MHT-3B',
 		'Valrahal',
-		'Andrius'
+		'Andrius',
+		'Herrscher of Dominance'
 	],
 	// 5
 	[
@@ -343,6 +348,7 @@ export const buffs = [
 		'Support type DMG bonus',
 		'Ele DMG bonus',
 		'Nexus Ice DMG bonus',
+		'Nexus Physical DMG bonus',
 		'Weapon skill TDM bonus',
 		'Weapon skill / Combo TDM bonus', //
 		'Nexus Lightning DMG bonus',

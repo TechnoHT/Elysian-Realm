@@ -3867,6 +3867,204 @@ const nyx: Guide = {
 		}
 	]
 };
+//Reign Solaris
+const rs: Guide = {
+	name: 'Reign Solaris',
+	acr: 'rs',
+	version: '8.0',
+	builds: [
+		{
+			name: 'Ring',
+			buff: [
+				data.buffs[0][14],
+				data.buffs[3][6],
+				data.buffs[3][19]
+			],
+			signet: {
+				main: [
+					[data.su, '1'],
+					[data.eden, '1']
+				],
+				secondary: [
+					[data.hua, '2'],
+					[data.kalpas, '1']
+				],
+				optional: [
+					[data.pardofelis, '1']
+				]
+			},
+			emblem: [
+				[data.lightAsABodhiLeaf, data.emptyLikeShala],
+				[data.goldGoblet, data.dreamfulGold],
+				[data.heavyAsAMillionLives, data.dreamfulGold]
+			],
+			support: [
+				[ [data.sa], [data.vc] ],
+				[ [data.sa], [data.br, data.ss] ]
+			],
+			gear: [
+				[data.venv, data.itut, data.itum, data.itub]
+			],
+			signetTable: {
+				exclusive: {
+					[data.start]: [
+						'Daylight'
+					],
+					[data.optional]: [
+						'Iridescene',
+						'Everlasting Radiance'
+					],
+					[data.no]: [
+						'Dominance',
+						'Perseverance'
+					]
+				},
+				main: {
+					[data.su.name]: [
+						data.su.regular.dmgTotal,
+						data.su.regular.vuln,
+						data.su.regular.combo25,
+						data.su.regular.combo60,
+						data.su.nexus1.name,
+						data.su.nexus1.vuln,
+						data.su.nexus1.breachPhysEle
+					],
+					[data.eden.name]: [
+						data.eden.regular.dmgTotal,
+						data.eden.regular.dmgPhysEle,
+						data.eden.regular.spCapInitial,
+						data.eden.nexus1.name
+					]
+				},
+				secondary: {
+					[data.hua.name]: [
+						data.hua.regular.dmgTotal,
+						data.hua.regular.dmgPhys,
+						data.hua.regular.breachPhys,
+						data.hua.nexus2.name,
+						data.hua.nexus2.stackCap
+					],
+					
+					[data.kalpas.name]: [
+						data.kalpas.regular.dmgTotal,
+						data.kalpas.regular.dmgPhysEle,
+						data.kalpas.regular.hp,
+						data.kalpas.regular.vuln,
+						data.kalpas.nexus1.name,
+						data.kalpas.nexus1.fire,
+						data.kalpas.nexus1.dmgBonus
+					]
+				},
+				optional: {
+					[data.pardofelis.name]: [
+						data.pardofelis.regular.dmgPhysEle,
+						data.pardofelis.regular.dmgTotal,
+						data.pardofelis.nexus1.name
+					]
+				}
+			},
+			notes: `<p>Recommended to bring Dreamseeker. After obtaining Kalpas, remember to lower HP. Can also pick Griseo Red, Aponia 2(1 3 5) as reinforcement.
+
+					Rotation:</p>
+					Tap weapon to get on the hoverboard, then keep moving around. 
+					After getting <p>${data.su.nexus1.name}</p>, must get close to enemies to damage them. When fighting bosses, can hold evade to accelerate and dodge`
+		},
+		{
+			name: 'Charge',
+			buff: [
+				data.buffs[0][14],
+				data.buffs[3][6],
+				data.buffs[3][19]
+			],
+			signet: {
+				main: [
+					[data.vv, '1'],
+					[data.eden, '1']
+				],
+				secondary: [
+					[data.griseo, '1'],
+					[data.pardofelis, '1']
+				],
+				optional: [
+					[data.aponia, '2']
+				]
+			},
+			emblem: [
+				[data.psuedoMiracle, data.fallingInPastLight],
+				[data.goldGoblet, data.fallingInPastLight],
+				[data.farawayShip, data.fallingInPastLight]
+			],
+			support: [
+				[ [data.sa], [data.vc] ],
+				[ [data.sa], [data.ss] ]
+			],
+			gear: [
+				[data.venv, data.itut, data.itum, data.itub]
+			],
+			signetTable: {
+				exclusive: {
+					[data.start]: [
+						'Dominance'
+					],
+					[data.second]: [
+						'Perseverance'
+					],
+					[data.no]: [
+						'Everlasting Radiance',
+						'Daylight',
+						'Iridescence'
+					]
+				},
+				main: {
+					[data.vv.name]: [
+						data.vv.regular.vuln,
+						data.vv.regular.dmgTotal,
+						data.vv.regular.dmgWeap,
+						data.vv.regular.dmgPhysEle,
+						data.vv.nexus1.name,
+						data.vv.nexus1.breachPhys,
+						data.vv.nexus1.blades
+					],
+					[data.eden.name]: [
+						data.eden.regular.dmgTotal,
+						data.eden.regular.dmgPhysEle,
+						data.eden.regular.spCapInitial,
+						data.eden.nexus1.name
+					]
+				},
+				secondary: {
+					[data.griseo.name]: [
+						data.griseo.regular.red,
+						data.griseo.regular.yellow,
+						data.griseo.regular.black,
+						data.griseo.nexus1.name
+					],
+					[data.pardofelis.name]: [
+						data.pardofelis.regular.dmgPhysEle,
+						data.pardofelis.regular.dmgTotal,
+						data.pardofelis.regular.spHpCap,
+						data.pardofelis.nexus1.name
+					]
+				},
+				optional: {
+					[data.aponia.name]: [
+						data.aponia.regular.basicAtk,
+						data.aponia.regular.spRestore,
+						data.aponia.regular.vuln,
+						data.aponia.nexus2.name
+					],
+				}
+			},
+			notes: `<p>Rotation:</p>
+					Tap weapon to get on the hoverboard, hold basic to charge attack, tap basic to recharge. 
+					Hold weapon to get off the board, then repeat, don't need to outburst
+					
+					Pick only 1 from Aponia 2 enhanced, can also pick Su 1 (Both combo boosts, TDM, vulnerability) as reinforcement.`
+		}
+	]
+};
+
+
 // Reveris Calico
 const pardo: Guide = {
 	name: 'Reverist Calico',
@@ -6052,11 +6250,14 @@ const vkek: Guide = {
 		}
 	]
 };
+
+
+
 export const valks: any[] = [
 	aka,	bke,	ce,		cn,		da,		sena,	aponia,	dw,		fr,		fv,
 	mc,		eden,	gm,		villv,	hofi, 	hofs,	hoh,	hoo,	hor,	horb,
 	hos,	hov,	hot,	hotr,	mobius,	sus,	songque, lantern,	lp,	lk,
-	lv,		thelema, raven,	sirin,	elysia,	pe,		fischl,	pardo,	ri,		si,
+	lv,		thelema, raven,	sirin,	elysia,	pe,		fischl,	pardo, rs,	ri,		si,
 	sk,		sw,		ss,		spa,	griseo,	nyx,	sn,		vb,		kira,	carole,
 	ta,		sparkle, ve, coralie, 	helia,	vg,		vq,		vkek
 ];

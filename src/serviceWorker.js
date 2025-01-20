@@ -85,7 +85,8 @@ const bannerImages = [
 	'Valkyrie_Boltstorm',
 	'Valkyrie_Gloria',
 	'Valkyrie_Quicksand',
-	'Vermilion_Knight_Eclipse'
+	'Vermilion_Knight_Eclipse',
+	'Reign Solaris'
 ];
 
 const images = [
